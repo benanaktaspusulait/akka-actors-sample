@@ -1,0 +1,18 @@
+#mac
+.DS_Store
+
+# Compiled class file
+*.class
+
+# Log file
+*.log
+.iml
+# Package Files #
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+.idea
+target

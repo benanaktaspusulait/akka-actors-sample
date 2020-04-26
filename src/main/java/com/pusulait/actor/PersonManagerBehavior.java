@@ -52,7 +52,7 @@ public class PersonManagerBehavior extends AbstractBehavior<PersonManagerBehavio
         return newReceiveBuilder()
                 .onMessage(CreateCommand.class, command -> {
                     if (command.getMessage().equals(Utils.COMMAND_NAME)) {
-                        for (int i = 0; i < 20; i++) {
+                        for (int i = 0; i < 1000 * 1; i++) {
                             ActorRef<PersonWorkerBehavior.Command> worker =
                                     getContext().spawn(PersonWorkerBehavior.create(), "worker" + i);
 
